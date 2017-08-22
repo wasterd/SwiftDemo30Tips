@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Y6W-nb-vcs">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="XS7-wR-fg4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Y6W-nb-vcs" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="axO-mm-EkN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="twv-8A-K7k" kind="relationship" relationship="rootViewController" id="c7d-7d-frV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o9U-fY-bIz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.59999999999999" y="791.15442278860576"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="lzl-dO-ILO">
+            <objects>
+                <viewController id="twv-8A-K7k" customClass="ViewController" customModule="TestOne" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OTf-I5-pws"/>
+                        <viewControllerLayoutGuide type="bottom" id="Osq-2A-DaO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="f7l-0P-ASG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hgB-T2-XLO">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="todoCell" id="voe-dV-XGf">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="voe-dV-XGf" id="GQM-cj-JgY">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="79.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" tag="11" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wPl-sI-bmj">
+                                                    <rect key="frame" x="23" y="9" width="60" height="60"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="60" id="WX9-Zz-SRS"/>
+                                                        <constraint firstAttribute="height" constant="60" id="psP-VT-2aT"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="12" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5S1-Ds-o3I">
+                                                    <rect key="frame" x="91" y="9" width="236" height="16"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="16" id="jLI-AZ-YuK"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="13" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZXz-g6-cz1">
+                                                    <rect key="frame" x="91" y="55" width="236" height="16"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="16" id="C6a-qM-wRx"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="5S1-Ds-o3I" firstAttribute="top" secondItem="GQM-cj-JgY" secondAttribute="top" constant="9" id="DF8-QR-B4c"/>
+                                                <constraint firstAttribute="bottom" secondItem="ZXz-g6-cz1" secondAttribute="bottom" constant="9" id="KOi-E9-89C"/>
+                                                <constraint firstItem="ZXz-g6-cz1" firstAttribute="leading" secondItem="wPl-sI-bmj" secondAttribute="trailing" constant="8" id="PVX-h2-hf6"/>
+                                                <constraint firstAttribute="trailing" secondItem="5S1-Ds-o3I" secondAttribute="trailing" constant="15" id="T5T-Lq-NKI"/>
+                                                <constraint firstAttribute="trailing" secondItem="ZXz-g6-cz1" secondAttribute="trailing" constant="15" id="h8s-eG-VvP"/>
+                                                <constraint firstItem="5S1-Ds-o3I" firstAttribute="leading" secondItem="wPl-sI-bmj" secondAttribute="trailing" constant="8" id="iFz-DV-uw7"/>
+                                                <constraint firstItem="wPl-sI-bmj" firstAttribute="leading" secondItem="GQM-cj-JgY" secondAttribute="leading" constant="23" id="pqN-1V-rax"/>
+                                                <constraint firstItem="wPl-sI-bmj" firstAttribute="top" secondItem="GQM-cj-JgY" secondAttribute="top" constant="9" id="vjd-VN-ti5"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="ens-b7-v3p" kind="push" identifier="editTodo" id="ccx-g8-cXU"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="twv-8A-K7k" id="aeO-Cj-ovX"/>
+                                    <outlet property="delegate" destination="twv-8A-K7k" id="IBz-O2-Vye"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Osq-2A-DaO" firstAttribute="top" secondItem="hgB-T2-XLO" secondAttribute="bottom" id="Qbf-FR-vcR"/>
+                            <constraint firstAttribute="trailing" secondItem="hgB-T2-XLO" secondAttribute="trailing" id="pZ7-tX-vSs"/>
+                            <constraint firstItem="hgB-T2-XLO" firstAttribute="top" secondItem="OTf-I5-pws" secondAttribute="bottom" id="sKi-6k-V0T"/>
+                            <constraint firstItem="hgB-T2-XLO" firstAttribute="leading" secondItem="f7l-0P-ASG" secondAttribute="leading" id="xbS-h7-D5L"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="68Y-7b-YYQ">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="BF5-jR-IKi">
+                            <connections>
+                                <segue destination="ens-b7-v3p" kind="push" id="z8B-M6-yxh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="hgB-T2-XLO" id="1uw-Fe-48W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sZ6-Qo-HJs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="932" y="790.25487256371821"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="wWO-qZ-XzE">
+            <objects>
+                <viewController id="ens-b7-v3p" customClass="DetailViewController" customModule="TestOne" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tXq-kh-Hx4"/>
+                        <viewControllerLayoutGuide type="bottom" id="FtV-Jh-Ljq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tIe-nP-2Py">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Todo Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qQd-EH-rpw">
+                                <rect key="frame" x="40" y="239" width="77" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JiP-wA-PoY">
+                                <rect key="frame" x="139" y="234" width="203" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="c81-fd-oYm">
+                                <rect key="frame" x="0.0" y="293" width="375" height="216"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <date key="date" timeIntervalSinceReferenceDate="524628039.818048">
+                                    <!--2017-08-17 02:00:39 +0000-->
+                                </date>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1O5-Ri-tuj">
+                                <rect key="frame" x="172" y="541" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="确认"/>
+                                <connections>
+                                    <action selector="sureButtonClicked:" destination="ens-b7-v3p" eventType="touchUpInside" id="Xrq-RC-J9N"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rr3-OZ-t63">
+                                <rect key="frame" x="52" y="140" width="52" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="phone"/>
+                                <state key="selected" backgroundImage="phone-selected"/>
+                                <connections>
+                                    <action selector="phoneAction" destination="ens-b7-v3p" eventType="touchUpInside" id="MPj-iS-NTk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k30-QF-zdI">
+                                <rect key="frame" x="125" y="140" width="52" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="child"/>
+                                <state key="selected" backgroundImage="child-selected"/>
+                                <connections>
+                                    <action selector="childAction" destination="ens-b7-v3p" eventType="touchUpInside" id="W4y-RR-Ojf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ci-oQ-6iq">
+                                <rect key="frame" x="191" y="140" width="52" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="shopping-cart"/>
+                                <state key="selected" backgroundImage="shopping-cart-selected"/>
+                                <connections>
+                                    <action selector="shopAction" destination="ens-b7-v3p" eventType="touchUpInside" id="gDs-aS-g0L"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Chn-kj-y7F">
+                                <rect key="frame" x="273" y="140" width="52" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="travel"/>
+                                <state key="selected" backgroundImage="travel-selected"/>
+                                <connections>
+                                    <action selector="travelAction" destination="ens-b7-v3p" eventType="touchUpInside" id="QYE-a2-h3d"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="FgA-z9-nNi"/>
+                    <connections>
+                        <outlet property="childButton" destination="k30-QF-zdI" id="gaz-wA-EdX"/>
+                        <outlet property="datepicker" destination="c81-fd-oYm" id="WKj-fQ-hZ7"/>
+                        <outlet property="enterTextField" destination="JiP-wA-PoY" id="sPc-tL-PqZ"/>
+                        <outlet property="phoneButton" destination="Rr3-OZ-t63" id="F1O-0i-EIh"/>
+                        <outlet property="shoppingcartBrutton" destination="2ci-oQ-6iq" id="783-L1-Gsf"/>
+                        <outlet property="travelButton" destination="Chn-kj-y7F" id="DBC-nR-KaA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hH1-pg-PWN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1868" y="790"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="child" width="50" height="50"/>
+        <image name="child-selected" width="50" height="50"/>
+        <image name="phone" width="50" height="50"/>
+        <image name="phone-selected" width="50" height="50"/>
+        <image name="shopping-cart" width="50" height="50"/>
+        <image name="shopping-cart-selected" width="50" height="50"/>
+        <image name="travel" width="50" height="50"/>
+        <image name="travel-selected" width="50" height="50"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="ccx-g8-cXU"/>
+    </inferredMetricsTieBreakers>
+</document>
