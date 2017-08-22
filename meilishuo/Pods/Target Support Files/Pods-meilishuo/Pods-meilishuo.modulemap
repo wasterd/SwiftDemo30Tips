@@ -1,0 +1,6 @@
+framework module Pods_meilishuo {
+  umbrella header "Pods-meilishuo-umbrella.h"
+
+  export *
+  module * { export * }
+}

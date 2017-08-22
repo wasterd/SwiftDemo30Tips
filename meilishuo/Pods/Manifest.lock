@@ -1,0 +1,12 @@
+PODS:
+  - PagingMenuController (1.4.0)
+
+DEPENDENCIES:
+  - PagingMenuController (~> 1.4.0)
+
+SPEC CHECKSUMS:
+  PagingMenuController: 79a9ce7472839d9afd0a6b879af6132822644a47
+
+PODFILE CHECKSUM: fc12a922dc17a93641a002d4a1239ba8b9d2e002
+
+COCOAPODS: 1.2.1

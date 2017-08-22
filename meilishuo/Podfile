@@ -1,0 +1,13 @@
+platform:ios,'8.0'
+use_frameworks!
+target 'meilishuo' do
+
+
+
+
+pod 'PagingMenuController','~> 1.4.0'
+
+
+end
+
+
